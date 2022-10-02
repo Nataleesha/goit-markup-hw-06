@@ -669,10 +669,16 @@
               ></textarea>
             </label>
           </div>
-          <label class="checkbox-label">
+
+          <div class="agreement">
+            <label class="checkbox-label" for="accept">
+              Погоджуюся з розсилкою та приймаю &nbsp;
+              <a href="#" class="checkbox-link"> Умови договору</a>
+            </label>
             <input
               type="checkbox"
               class="checkbox"
+              id="accept"
               name="agreement"
               value="agree"
             />
@@ -681,9 +687,9 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </div>
-            Погоджуюся з розсилкою та приймаю &nbsp;
-            <a href="#" class="checkbox-link"> Умови договору</a>
-          </label>
+          </div>
+          
+          
           <div class="btn-container">
             <button type="submit" value="submit" class="submit-form-btn">
               Відправити
