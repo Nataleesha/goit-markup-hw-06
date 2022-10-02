@@ -601,11 +601,12 @@ p {
   fill: currentColor;
 }
 
-.newsletter-form {
-  display: flex;
+.newsletter-form .join-us {
+  display: block;
 }
 
 .newsletter-input {
+  display: inline-block;
   margin-right: 12px;
   width: 358px;
   height: 50px;
@@ -647,7 +648,7 @@ p {
   padding: 10px 28px;
   border-color: transparent;
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -861,19 +862,26 @@ p {
   margin: -1px;
 }
 
-.checkbox-icon {
+.checkbox-icon-holder {
+  display: flex;
+  justify-content: center;
   width: 16px;
   height: 15px;
-  border-radius: 3px;
   margin-right: 7px;
-  position: relative;
-  bottom: 2px;
-  background-image: url("../images/checkbox.svg");
+  margin-bottom: 4px;
+  border-radius: 3px;
+  border: 2px solid var(--title-text-color);
+  transition: border 250ms var(--trans-timing-function),
+    background-color 250ms var(--trans-timing-function);
 }
 
-.checkbox:checked + .checkbox-icon {
+.checkbox-icon {
+  width: 12px;
+}
+
+.checkbox:checked + .checkbox-icon-holder {
+  border: 2px solid var(--highlight-color);
   background-color: var(--highlight-color);
-  background-image: url("../images/check.svg");
 }
 
 .checkbox-label {

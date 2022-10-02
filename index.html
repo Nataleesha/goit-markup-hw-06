@@ -596,11 +596,12 @@
         </div>
 
         <div class="newsletter">
-          <p class="join-us">Підпишіться на розсилку</p>
           <form class="newsletter-form" autocomplete="on">
+            <label class="join-us" for="email">Підпишіться на розсилку</label>
             <input
               type="email"
               name="email"
+              id="email"
               placeholder="E-mail"
               class="newsletter-input"
             />
@@ -675,12 +676,18 @@
               name="agreement"
               value="agree"
             />
-            <span class="checkbox-icon"></span>
-            Погоджуюся з розсилкою та приймаю  &nbsp;
+            <div class="checkbox-icon-holder">
+              <svg class="checkbox-icon">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </div>
+            Погоджуюся з розсилкою та приймаю &nbsp;
             <a href="#" class="checkbox-link"> Умови договору</a>
           </label>
           <div class="btn-container">
-            <button type="submit" value="submit" class="submit-form-btn">Відправити</button>
+            <button type="submit" value="submit" class="submit-form-btn">
+              Відправити
+            </button>
           </div>
         </form>
       </div>
